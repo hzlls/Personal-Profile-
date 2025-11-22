@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Form - CSC584 Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <h1>📝 Personal Profile Form</h1>
+            <p>Please fill in your details below</p>
+        </div>
+        
+        <form action="profile" method="POST" class="profile-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            
+            <div class="form-group">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" name="studentId" required placeholder="Enter your student ID">
+            </div>
+            
+            <div class="form-group">
+                 <label for="program">Program:</label>
+                 <input type="text" id="program" name="program" required placeholder="Enter your program (e.g., Computer Science)">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+            
+            <div class="form-group">
+                <label for="hobbies">Hobbies:</label>
+                <input type="text" id="hobbies" name="hobbies" required placeholder="e.g., Reading, Gaming, Sports">
+            </div>
+            
+            <div class="form-group">
+                <label for="introduction">Self Introduction:</label>
+                <textarea id="introduction" name="introduction" rows="5" required placeholder="Tell us about yourself..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit Profile</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
